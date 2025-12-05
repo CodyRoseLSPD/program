@@ -1,0 +1,248 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:'Arial', sans-serif;
+    background: linear-gradient(180deg, #0b0c10 0%, #1f2833 100%);
+    color:#fff;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+}
+
+.hero {
+    height:100vh;
+    background: linear-gradient(135deg, #0b0c10, #1f2833);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::after {
+    content:"";
+    position:absolute;
+    width:200%;
+    height:200%;
+    background:radial-gradient(circle, rgba(0,191,255,0.15) 0%, transparent 70%);
+    animation: heroGlow 10s linear infinite;
+}
+
+@keyframes heroGlow {
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+.hero-overlay {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    z-index:1;
+}
+
+.hero-container {
+    display:flex;
+    align-items:center;
+    gap:50px;
+    backdrop-filter: blur(15px);
+    background: rgba(0,0,0,0.5);
+    padding:50px;
+    border-radius:30px;
+    animation: fadeIn 2s ease forwards;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,191,255,0.5);
+}
+
+.hero-logo img{
+    width:75px;
+    height:80px;
+    position:absolute;
+    top:20px;
+    left:20px;
+    border-radius:15px;
+    transition: transform 0.3s;
+}
+
+.hero-logo img:hover{
+    transform: scale(1.1) rotate(-10deg);
+}
+
+.hero-text h1 {
+    font-size:6rem;
+    background: linear-gradient(90deg, #00bfff, #1e90ff);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: 0 0 2px rgba(0,191,255,0.2); 
+    animation: gradientText 5s infinite linear;
+}
+
+@keyframes gradientText{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.hero-text p {
+    font-size:2rem;
+    color: #ffffff; 
+    background: none; 
+    text-shadow: none; 
+}
+
+.hero-image img {
+    max-width:400px;
+    border-radius:25px;
+    box-shadow: 0 10px 30px rgba(0,191,255,0.2);
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.08) rotate(2deg);
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;  
+  color: #61bffd;           
+  text-align: center;
+  cursor: pointer;
+}
+
+.postulaty {
+    padding:100px 20px;
+    background: linear-gradient(180deg, #1f2833, #0b0c10);
+}
+
+.postulat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+
+.postulat-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    width: 70%;
+    min-height: 25vh;
+    padding: 30px 50px;
+    position: relative;
+    opacity: 0; 
+    transform: translateY(50px) scale(0.95);
+    transition: all 0.8s ease, box-shadow 0.5s;
+    box-shadow: 0 0 30px rgba(0,191,255,0.2);
+}
+
+.postulat-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.postulat-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0,191,255,0.2); 
+}
+
+.postulat-graphic img {
+    width: 220px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.postulat-graphic img:hover {
+    transform: scale(1.07) rotate(1deg);
+    filter: brightness(1.1);
+}
+
+.postulat-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow:0 0 3px #00bfff;
+}
+
+.postulat-text p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.cta-footer{
+    background: linear-gradient(135deg, #0b0c10, #1f2833);
+    text-align:center;
+    padding:50px 520px;
+    color:#fff;
+    box-shadow: inset 0 0 20px rgba(0,191,255,0.1);
+}
+
+.cta-footer h2{
+    font-size:3rem;
+    margin-bottom:20px;
+    background: linear-gradient(90deg, #00bfff, #1e90ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cta-footer p{
+    font-size:1.3rem;
+    margin-bottom:30px;
+}
+
+.btn-footer{
+    background: linear-gradient(135deg, #00bfff, #1e90ff);
+    color:#fff;
+    padding:15px 40px;
+    border-radius:50px;
+    font-size:1.3rem;
+    text-decoration:none;
+    transition:0.4s;
+    box-shadow:0 5px 20px rgba(0,191,255,0.4);
+}
+
+.btn-footer:hover{
+    transform:scale(1.1);
+    box-shadow:0 10px 40px rgba(0,191,255,0.6);
+}
+
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) scale(1) !important;
+}
+
+@media(max-width:900px){
+    .postulat-card, .postulat-card.reverse {
+        flex-direction: column !important;
+        width: 90%;
+        min-height: auto;
+    }
+
+    .postulat-graphic img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .hero-text h1{
+        font-size:4rem;
+    }
+
+    .hero-text p{
+        font-size:1.5rem;
+    }
+}
