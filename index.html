@@ -31,22 +31,25 @@
     <h1 class="section-title1">Moje Biuro Szefa</h1>
 
     <div class="biuro-grid">
-        <div class="biuro-card">
+        <div class="biuro-card" data-profile="jack">
             <img src="jaca.png" alt="Assistant Chief Of Police">
             <h3>Jack Shovel</h3>
             <p>Assistant Chief Of Police</p>
         </div>
-        <div class="biuro-card">
-            <img src="cody.png" alt="Chief Of Police">
+        <div class="biuro-card" data-profile="cody">
+            <img src="cody1.png" alt="Chief Of Police">
             <h3>Cody Rose</h3>
             <p>Chief Of Police</p>
         </div>
-        <div class="biuro-card">
-            <img src="unknown.png" alt="Deputy Chief Of Police">
-            <h3>???</h3>
+        <div class="biuro-card" data-profile="matthew">
+            <img src="matthew.png" alt="Deputy Chief Of Police">
+            <h3>Matthew Rose-Harrington</h3>
             <p>Deputy Chief Of Police</p>
         </div>
     </div>
+    <p class="biuro-footer">
+    Kliknij na dowolny profil, aby zobaczyć szczegółowe informacje o członku Biura Szefa.
+    </p>
 </section>
 
 <section class="postulaty">
@@ -133,8 +136,28 @@
         <h2>Dziękujemy za przeczytanie!</h2>
         <p>Wybierz mądrze i nie zmarnuj Swojego głosu!</p>
         <p>© 2025 Cody Rose</p>
+        <div class="easter-egg-1">
+            <p>#MakeLSPDGreatAgain DON'T VOTE FOR J. HARVEY</p>
+        </div>
     </div>
 </footer>
+
+<div id="modalOverlay" class="modal-overlay">
+    <div class="modal-big">
+
+        <div class="modal-left">
+            <h1 class="modal-name" id="modalName"></h1>
+            <h3 class="modal-role" id="modalRole"></h3>
+            <p class="modal-description" id="modalDescription"></p>
+        </div>
+
+        <div class="modal-right">
+            <img id="modalPhoto" class="modal-photo" src="" alt="">
+            <button class="modal-close" id="modalCloseBtn">✖</button>
+        </div>
+
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>
