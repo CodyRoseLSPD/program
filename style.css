@@ -248,16 +248,33 @@ background: linear-gradient(90deg, #00bfff, #1e90ff);
 text-shadow: 0 0 5px rgba(0,191,255,0.3);
 }
 
+.biuro-section h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    background: linear-gradient(90deg, #00bfff, #1e90ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(0,191,255,0.3);
+}
 
 .biuro-section {
 margin-top: 0px;
 padding-top: 30px;
-padding-bottom: 60px;
+padding-bottom: 90px;
 background: linear-gradient(180deg, #1f2833, #0b0c10);
 }
 
 
 .biuro-grid {
+display: flex;
+justify-content: center;
+gap: 40px;
+flex-wrap: wrap;
+}
+
+.biuro-grid2 {
 display: flex;
 justify-content: center;
 gap: 40px;
@@ -496,7 +513,7 @@ line-height: 1.5;
 .biuro-footer {
     width: 100%;
     text-align: center;
-    margin-top: 45px;
+    margin-top: 5px;
     font-size: 1.1rem;
     color: #b8e7ff;
     opacity: 0.85;
