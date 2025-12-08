@@ -1,3 +1,10 @@
+document.getElementById("scrollDown").addEventListener("click", () => {
+    document.getElementById("biuro-szefa").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+
 const postulatCards = document.querySelectorAll('.postulat-card');
 
 const observer = new IntersectionObserver(entries=>{
@@ -14,7 +21,7 @@ const profiles = {
     "cody": {
         name: "Cody Rose",
         role: "Chief Of Police",
-        photo: "cody1.png",
+        photo: "3.png",
         desc: `Nazywam się Cody Rose. Od wielu lat służę w LSPD i bardzo dobrze znam tę pracę. W swojej karierze pracowałem w różnych jednostkach, także specjalnych, dzięki czemu zdobyłem duże doświadczenie w trudnych sytuacjach i ważnych decyzjach. Miałem też okazję pracować w Biurze Szefa na innych stacjach, więc wiem, jak wygląda zarządzanie i odpowiedzialność na wysokim stanowisku.
 
 Lubię zwierzęta i zawsze traktuję je z szacunkiem. Uważam, że pokazuje to, jaki jestem z natury, tzn. spokojny, otwarty i życzliwy. Zawsze staram się stworzyć przyjazną atmosferę w pracy. Każdego wysłucham, niezależnie od stopnia czy problemu, bo wierzę, że dobra komunikacja jest kluczem do współpracy.
@@ -26,16 +33,22 @@ Jako kandydat na Szefa Policji chcę wprowadzać jasne zasady, wspierać cały z
         name: "Jack Shovel",
         role: "Assistant Chief Of Police",
         photo: "jaca.png",
-        desc: `Jack Shovel to funkcjonariusz z dużym doświadczeniem, który od lat pracuje w Departamencie. Prywatnie oraz służbowo również się długo znamy. Był kiedyś Kapitanem Field Training Division i do dziś trzyma pieczę nad tą jednostką. Dba o to, aby do służby trafiali odpowiedni ludzie, czyli tacy, którzy naprawdę pasują do pracy w policji i potrafią działać w zespole.
+        desc: `Jack Shovel to Sergeant z dużym doświadczeniem, który od lat pracuje w Departamencie. Prywatnie oraz służbowo również się długo znamy. Był kiedyś Kapitanem Field Training Division i do dziś trzyma pieczę nad tą jednostką. Dba o to, aby do służby trafiali odpowiedni ludzie, czyli tacy, którzy naprawdę pasują do pracy w policji i potrafią działać w zespole.
 
 Jack świetnie zna procedury oraz sprawy prawne. Trudno go zagiąć, bo zawsze jest przygotowany i dokładnie wie, jakie zasady obowiązują w każdej sytuacji. Dzięki temu często jest osobą, do której inni przychodzą po radę.
 
 Jest człowiekiem, który potrafi rozwiązywać problemy szybko i spokojnie. Zachowuje chłodną głowę, umie ocenić sytuację i znaleźć najlepsze wyjście. To ktoś, na kim zawsze można polegać zarówno w codziennej pracy, jak i w trudnych momentach.`
     },
+    "marek": {
+        name: "Mark Clarkson",
+        role: "Captain I",
+        photo: "1.png",
+        desc: `ziomek se cos napisze`
+    },
     "matthew": {
         name: "Matthew Rose-Harrington",
         role: "Deputy Chief Of Police",
-        photo: "matthew.png",
+        photo: "2.png",
         desc: `Matthew Rose-Harrington nie ma jeszcze tak długiego stażu jak Ja czy Jack, ale mimo krótszego doświadczenia szybko udowodnił, że jest wyjątkowym funkcjonariuszem. Jest osobą otwartą, miłą i bardzo cierpliwą. Zawsze wie, jak podejść do drugiego człowieka i z której strony z nim rozmawiać, dzięki czemu potrafi spokojnie i profesjonalnie rozwiązywać różne sytuacje.
 
 Znamy się prywatnie, ponieważ poznałem go, gdy przechodził trudny moment w swoim życiu. Z czasem się zaprzyjaźniliśmy, a pracując razem, widziałem, jak pod moją wodzą wyrasta na mądrego, odpowiedzialnego i naprawdę dobrego funkcjonariusza. W swojej karierze był również Detektywem oraz Sierżantem jednostki detektywistycznej, co dało mu duże doświadczenie w sprawach dochodzeniowych. Można powiedzieć, że w swojej pracy jest prawie nie do zastąpienia.
