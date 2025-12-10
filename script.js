@@ -47,7 +47,7 @@ Jest człowiekiem, który potrafi rozwiązywać problemy szybko i spokojnie. Zac
 
 Jest pewny siebie, zdecydowany i potrafi działać pod presją, dlatego świetnie odnajduje się w sytuacjach, które wymagają szybkiej reakcji i dobrej organizacji. Mark zawsze stawia na skuteczność, ale jednocześnie dba o to, by jego ludzie czuli się wspierani i wiedzieli, że mogą na niego liczyć.
 
-To funkcjonariusz, który idealnie nadaje się do prowadzenia zespołów i koordynowania działań, a nawet można powiedzieć, że jest do tego po prostu stworzony.`
+To Officer, który idealnie nadaje się do prowadzenia zespołów i koordynowania działań, a nawet można powiedzieć, że jest do tego po prostu stworzony.`
     },
     "matthew": {
         name: "Matthew Rose-Harrington",
@@ -87,3 +87,4 @@ modalCloseBtn.addEventListener("click", () => {
     modalOverlay.style.display = "none";
 
 });
+
