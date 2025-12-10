@@ -43,7 +43,11 @@ Jest człowiekiem, który potrafi rozwiązywać problemy szybko i spokojnie. Zac
         name: "Mark Clarkson",
         role: "Captain I",
         photo: "1.png",
-        desc: `ziomek se cos napisze`
+        desc: `Mark Clarkson to officer z długim stażem, który przez lata zdobył ogromne doświadczenie w pracy w terenie i w kierowaniu zespołem. Ma naturalny talent do zarządzania ludźmi i potrafi wydawać jasne polecenia, utrzymać porządek i zadbać o to, aby każdy wiedział, co ma robić.
+
+Jest pewny siebie, zdecydowany i potrafi działać pod presją, dlatego świetnie odnajduje się w sytuacjach, które wymagają szybkiej reakcji i dobrej organizacji. Mark zawsze stawia na skuteczność, ale jednocześnie dba o to, by jego ludzie czuli się wspierani i wiedzieli, że mogą na niego liczyć.
+
+To funkcjonariusz, który idealnie nadaje się do prowadzenia zespołów i koordynowania działań, a nawet można powiedzieć, że jest do tego po prostu stworzony.`
     },
     "matthew": {
         name: "Matthew Rose-Harrington",
@@ -81,4 +85,5 @@ document.querySelectorAll(".biuro-card").forEach(card => {
 
 modalCloseBtn.addEventListener("click", () => {
     modalOverlay.style.display = "none";
+
 });
